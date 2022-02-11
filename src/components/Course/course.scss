@@ -1,0 +1,61 @@
+@import './../../assets/variables.scss';
+
+.course {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  .box {
+    flex: 1 1 40rem;
+    border-radius: .5rem;
+    border: $border;
+    padding: 1rem;
+    position: relative;
+    background: #fff;
+
+    img {
+      height: 25rem;
+      width: 100%;
+    }
+
+    .amount {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      font-size: 2rem;
+      padding: .5rem 1rem;
+      background: $hover;
+      color: #fff;
+      border-radius: .5rem;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      color: #666;
+      font-size: 1.5rem;
+      padding: .5rem 0;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: $border;
+      margin-top: 1rem;
+      padding: .8rem;
+
+      p {
+        color: #666;
+        font-size: 1.5rem;
+
+        i {
+          padding-right: .4rem;
+          color: $hover;
+        }
+      }
+    }
+  }
+}

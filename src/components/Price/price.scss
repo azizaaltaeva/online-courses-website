@@ -1,0 +1,45 @@
+@import './../../assets/variables.scss';
+
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  .box {
+    flex: 1 1 30rem;
+    text-align: center;
+    border: $border;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: $box-shadow;
+
+    h3 {
+      font-size: 2.5rem;
+      color: #333;
+      padding: 1.5rem 0;
+    }
+
+    .amount {
+      font-size: 3.5rem;
+      padding: 1rem 0;
+      color: $hover;
+      font-weight: bold;
+    }
+
+    ul {
+      border-bottom: $border;
+      padding: 1rem 0;
+      list-style: none;
+
+      li {
+        padding: .7rem 0;
+        font-size: 1.7rem;
+        color: #666;
+      }
+    }
+
+    .btn {
+      margin: 2rem 0;
+    }
+  }
+}

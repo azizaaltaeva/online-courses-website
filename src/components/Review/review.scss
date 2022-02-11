@@ -1,0 +1,54 @@
+@import './../../assets/variables.scss';
+
+.review {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  .box {
+    border-radius: .5rem;
+    border: $border;
+    padding: 1rem;
+    flex: 1 1 40rem;
+    background: #fff;
+
+    .student {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .student-info {
+        display: flex;
+        align-items: center;
+
+        img {
+          border-radius: 50%;
+          object-fit: cover;
+          height: 7rem;
+          width: 7rem;
+          margin-left: 1.5rem;
+        }
+
+        h3 {
+          font-size: 2rem;
+          color: #333;
+        }
+
+        span {
+          font-size: 1.5rem;
+          color: $hover;
+        }
+      }
+      i {
+        font-size: 2.5rem;
+        color: $hover;
+        opacity: .7;
+      }
+    }
+  }
+  .text {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: #666;
+  }
+}

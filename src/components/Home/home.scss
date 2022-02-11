@@ -1,0 +1,33 @@
+@import './../../assets/variables.scss';
+
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  height: 45rem;
+
+  .content {
+    flex: 1 1 40rem;
+
+    h2 {
+      color: $main-color;
+      font-size: 4.5rem;
+    }
+
+    p {
+      padding: .5rem 0;
+      font-size: 1.7rem;
+      color: #666;
+    }
+  }
+
+  .image {
+    flex: 1 1 40rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}

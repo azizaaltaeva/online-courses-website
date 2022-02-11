@@ -1,0 +1,70 @@
+@import './../../assets/variables.scss'; 
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  .image {
+    flex: 1 1 35rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  form {
+    flex: 1 1 50rem;
+    border: $border;
+    border-radius: .5rem;
+    padding: 2rem;
+
+    .inputBox {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      input {
+        width: 49%;
+      }
+    }
+    .box, textarea {
+      width: 100%;
+    }
+    input, textarea {
+      padding: 1rem;
+      margin: .7rem 0;
+      font-size: 1.7rem;
+      border: $border;
+      border-radius: .5rem;
+      text-transform: none;
+      color: #333;
+
+      &:hover {
+        border-color: $main-color;
+      }
+    }
+    textarea {
+      height: 20rem;
+      resize: none;
+    }
+    .btn {
+      padding: 1rem 5rem;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .contact {
+    form {
+      .inputBox {
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+

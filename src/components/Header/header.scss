@@ -1,0 +1,80 @@
+@import './../../assets/variables.scss';
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 7%;
+  border-bottom: $border;
+  box-shadow: $box-shadow;
+  position: relative;
+  z-index: 1000;
+
+
+  .logo {
+    font-size: 2.5rem;
+    color: $main-color;
+    font-weight: bold;
+
+    span {
+      color: $hover;
+    }
+  }
+
+  .navbar {
+    a {
+      margin-left: 2rem;
+      font-size: 2rem;
+      color: #333;
+
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+
+  #menu {
+    font-size: 2.5rem;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    border: $border;
+    cursor: pointer;
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 991px) {
+  
+  header {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  header {
+    #menu {
+      display: initial;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 100%; left: 0; right: 0;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+      a {
+        font-size: 2.5rem;
+        display: block;
+        margin: 2rem 0;
+        text-align: center;
+      }
+    }
+    .navbar.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      background: #f3f3f3;
+    }
+  }
+}

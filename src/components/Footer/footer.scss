@@ -1,0 +1,42 @@
+@import './../../assets/variables.scss';
+
+.footer {
+
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    .box {
+      flex: 1 1 20rem;
+
+      h3 {
+        font-size: 2.5rem;
+        color: $hover;
+        padding: .7rem 0;
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: #666;
+        padding: .7rem 0;
+      }
+
+      a {
+        display: block;
+        font-size: 1.5rem;
+        color: #666;
+        padding: .7rem 0;
+
+        i {
+          padding-right: .5rem;
+          color: $hover;
+        }
+
+        &:hover {
+          color: $hover;
+        }
+      }
+    }
+  }
+}
